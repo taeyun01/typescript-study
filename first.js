@@ -1,3 +1,0 @@
-"use strict";
-let a = "하이";
-a = 34343;
