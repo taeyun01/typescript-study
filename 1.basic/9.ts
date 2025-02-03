@@ -40,3 +40,12 @@ type ObjectC2 = ObjectA1 & ObjectB1;
 // 실습
 const ab: ObjectAB = { name: "하이" };
 const c1: ObjectC1 = { name: "하이", age: 10 };
+
+//* 여기서 c1이 좁은 타입이니 ab에 넣을 수 있다.
+//* 반대로 ab에 있는 속성을 c1에 넣을 수 없다. 대입을 한번 해보자
+// const ab: ObjectAB = { name: "하이" };
+// const c1: ObjectC1 = ab; // 에러
+
+//* 반대로 c1이 좁은 타입이니 넓은 타입의 ab에 넣을 수 있다.
+// const c1: ObjectC1 = { name: "하이", age: 10 };
+// const ab: ObjectAB = c1;
