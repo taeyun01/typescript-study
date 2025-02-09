@@ -60,3 +60,30 @@ const promises = await Promise.allSettled([
   Promise.resolve("b"),
 ]);
 const errors = promises.filter(isRejected);
+
+// class인 경우 instanceof 연산자도 가능
+
+// readonly
+interface A {
+  readonly a: string;
+  b: string;
+}
+
+// class에 private, protected 추가됨
+class B implements A {
+  private a: string;
+  protected b: string;
+}
+class C extends B {}
+new C().a;
+new C().b;
+
+// abstract class, abstract method
+abstract class X {
+  abstract work(user: User): boolean;
+}
+class Y extends X {
+  work(user: User): boolean {
+    return true;
+  }
+}
