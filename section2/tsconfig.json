@@ -4,6 +4,7 @@
     "module": "ESNext",
     "outDir": "dist",
     "strict": true,
+    "strictNullChecks": true, // strict의 하위옵션
     "moduleDetection": "force", // 파일들을 개별 모듈로 취급하기 위해 설정
     "skipLibCheck": true
   },
